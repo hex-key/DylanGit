@@ -1,3 +1,8 @@
+package testers;
+
+import git.Blob23;
+import git.Commit;
+
 import java.io.File;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;

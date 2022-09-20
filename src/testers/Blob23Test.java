@@ -1,3 +1,4 @@
+package testers;
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.*;
@@ -20,6 +21,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+
+import git.Blob23;
 
 public class Blob23Test {
 

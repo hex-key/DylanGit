@@ -1,3 +1,5 @@
+package testers;
+
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.*;   // instead of  import org.junit.Test;
@@ -16,6 +18,9 @@ import org.junit.Test;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
+import git.Blob23;
+import git.Index;
+
 public class IndexTest {
 
 	@BeforeAll
@@ -24,6 +29,7 @@ public class IndexTest {
 		File testFile = new File("testFile.txt");
 		FileWriter writeInTest = new FileWriter(testFile);
 		writeInTest.write("This is the test");
+		writeInTest.close();
 	}
 
 	@AfterAll
@@ -63,7 +69,7 @@ public class IndexTest {
 		assertTrue(checker);
 		tearDownAfterClass();
 		
-		
+		br.close();
 	}
 
 	@Test
@@ -81,7 +87,7 @@ public class IndexTest {
 			check = true;
 			assertTrue(check);
 		}
-		
+		br.close();
 	}
 
 	@Test

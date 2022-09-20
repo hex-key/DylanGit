@@ -1,3 +1,4 @@
+package git;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -31,6 +32,7 @@ public class SHA1 {
                 digest.update(buffer, 0, n);
             }
         }
+        fis.close();
         return digest.digest();
     }
 }
